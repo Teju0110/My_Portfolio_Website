@@ -1,0 +1,131 @@
+.about{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding-top: 0px;
+    line-height: 20px;
+    margin-bottom :-100px;
+    margin-right: 50px;
+
+}
+
+.about_left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.about_right{
+    flex: 1;
+}
+
+.about_Image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about_card_bg{
+    position: absolute;
+    top: 180px;
+    left:80px;
+    background-color: rgb(214, 242, 245);
+    height: 35%;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+}
+
+
+  .heading{
+    text-align: center;
+    color: #cdd835;
+}
+  
+  .about_right_title {
+    font-weight: 400;
+  }
+  
+  .about_right_sub {
+    margin: 20px 0px;
+  }
+  
+  .about_right_desc{
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .title{
+    font-size: 3rem;
+    text-align: center;
+    }
+  
+  .award{
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .award-texts{
+      width: 70%;
+  }
+  
+  .award-title{
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+  }
+
+  .aboutContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .details_Container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: #cdd835;
+    text-align: center;
+    color: black;
+  }
+
+  @media screen and (max-width:780px) {
+    .about{
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 250px;
+      margin-top: 50px;
+    }
+
+    .about_left {
+      width: 100%;
+    }
+
+    .card {
+      height: 30vh;
+    }
+
+    .about_card_bg, .award {
+      display: none;
+    }
+
+    .about_right{
+      padding: 20px;
+    }
+}
